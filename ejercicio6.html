@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 6</title>
+    <style>
+        .container {display: flex; flex-direction: row; flex-flow: row wrap;}
+        header{background: #501e1e; height: 200px;}
+        .principal{background: #862f2f; height: 200px;}
+        .otro{background: #a73d3d; height: 200px;}
+        aside{background: #b34646; height: 200px;}
+        footer{background: #df5858; height: 200px;}
+        .container > * {flex: 1 50%;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+        </nav>
+        </header>
+        <section class="principal"></section>
+        <section class="otro"></section>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+</html>
