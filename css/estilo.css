@@ -5,25 +5,23 @@ body{
 }
 .container{
   display: grid;
-  grid-template-columns: repeat(auto-fill minmax(500px, 1fr));
-  grid-template-rows: 25% 100px auto;
+  grid-template-columns: 100px auto auto 100px;
+  grid-template-rows: 50px 100px auto;
   
 
 }
 header{
   font-family: 'Major Mono Display', monospace;
   color: #7F0500;
-  font-size: 5em;
-  
-  
-}
-.primero{
-  width: 600px;
-  height: 600px;
+  font-size: 4em;
+  grid-area: 4 / 2 / 3 / 2
 }
 
+
 .dos{
-  align-content: center;
+  width: 700px;
+  height: 700px;
+  grid-area: 3 / 3 / 4 / 3
 }
 
 
@@ -31,7 +29,29 @@ header{
     width: device-width;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  body{
+    background-color: #000000;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 100px auto auto 100px;
+    grid-template-rows: 50px 100px auto auto;
     
+  
+  }
+  header{
+    font-family: 'Major Mono Display', monospace;
+    color: #7F0500;
+    font-size: 2em;
+    grid-area: 4 / 2 / 3 / 2
+  }
+  
+  
+  .dos{
+    width: 600px;
+    height: 600px;
+    grid-area: 4 / 2 / 5 / 4
+  }
   }
   
   /* 
@@ -40,7 +60,7 @@ header{
   */
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
+
  
     
   }
@@ -51,7 +71,7 @@ header{
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
-    
+
   
     
   }
@@ -62,7 +82,30 @@ header{
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
-
+    body{
+      background-color: #000000;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 50px 300px 50px;
+      grid-template-rows: 50px 100px auto auto;
+      
+    
+    }
+    header{
+      font-family: 'Major Mono Display', monospace;
+      color: #7F0500;
+      font-size: 1em;
+      grid-area: 4 / 2 / 3 / 2
+    }
+    
+    
+    .dos{
+      width: 500px;
+      height: 500px;
+      grid-area: 4 / 1 / 4 / 3;
+      align-self: center;
+    }
   }
     
   
