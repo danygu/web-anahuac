@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
-body{
+
+html, body{
+  margin: 0;
   background-color: #000000;
+}
+*, *:before, *:after{
+  box-sizing: border-box;
 }
 .container{
   display: grid;
